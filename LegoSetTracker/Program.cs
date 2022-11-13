@@ -9,3 +9,4 @@ namespace LegoSets
         {
             Console.WriteLine("Welcome to Lego Tracker");
             Console.WriteLine("How many Lego Sets Would You like to Add");
+            var numberOfRecords = int.Parse(Console.ReadLine());
