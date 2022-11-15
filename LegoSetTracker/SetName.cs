@@ -1,11 +1,13 @@
 ﻿using System;
-namespace LegoSetTracker
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace LegoSets
 {
-	public class SetName
-	{
-		public SetName()
-		{
-		}
-	}
+    class SetName : SetDetails
+    {
+        public string? ThemeSubTitle { get; set; }
+    }
 }
 
