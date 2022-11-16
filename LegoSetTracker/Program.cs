@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using Newtonsoft.Json;
 using System.IO;
 
+
+
 namespace LegoSets
 {
     class Program
@@ -94,10 +96,42 @@ namespace LegoSets
 
                         // Search any json files.
                         //If there multiple, import one at a time
-                        StreamReader file = new StreamReader("import.json");
-                        string importSet = file.ReadToEnd();
-                        SetDetails jsonSet = JsonConvert.DeserializeObject<SetDetails>(File.ReadAllText(@"\import.json"));
-                        Console.WriteLine(jsonSet);
+
+
+                        var imcomingSet = new List<Set>();
+
+                        using (StreamReader r = new StreamReader("import.json")) 
+                        {
+                            string json = r.ReadToEnd();
+                            imcomingSet = JsonSerializer.Deserialize<List<Set>>(json);
+                        }
+
+
+                        public record struct Set (
+                            public int Id { get; set; }
+                            public string? Theme { get; set; }
+                            public int SetNumber { get; set; }
+                            public int Pieces { get; set; }
+                            public int MiniFigs { get; set; }
+                            public string? Complete { get; set; }
+                        );
+
+
+
+
+
+    }
+
+
+                case "3":
+                    return false;
+                    default:
+                    return true;
+                    {
+                   
+
+             }
+
 
                         // deserialize JSON directly from a file
                         //using (StreamReader file = File.OpenText(@"c:\import.json"))
@@ -106,22 +140,6 @@ namespace LegoSets
                         //    SetDetails jsonsets = (SetDetails)serializer.Deserialize(file, typeof(SetDetails));
                         //    Console.WriteLine(jsonsets);
                         //}
-                    }
-
-                case "3":
-                    return false;
-                default:
-                    return true;
-            }
-        }
-
-
-
-
-
-
-
-
 
     }
 }
