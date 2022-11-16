@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using Newtonsoft.Json;
+using System.IO;
 
 namespace LegoSets
 {
@@ -90,19 +91,21 @@ namespace LegoSets
                         Console.WriteLine("Press enter when you have placed file in there.");
                         Console.ReadLine();
 
+
                         // Search any json files.
                         //If there multiple, import one at a time
-                        //StreamReader file = new StreamReader("import.json");
-                        //string importSet= file.ReadToEnd();
-                        //importSet = JsonConvert.DeserializeObject<SetDetails>(importSet);
-                        SetDetails set = JsonConvert.DeserializeObject<SetDetails>(File.ReadAllText(@"\import.json"));
+                        StreamReader file = new StreamReader("import.json");
+                        string importSet = file.ReadToEnd();
+                        SetDetails jsonSet = JsonConvert.DeserializeObject<SetDetails>(File.ReadAllText(@"\import.json"));
+                        Console.WriteLine(jsonSet);
 
                         // deserialize JSON directly from a file
-                        using (StreamReader file = File.OpenText(@"c:\import.json"))
-                        {
-                            JsonSerializer serializer = new JsonSerializer();
-                            SetDetails sets = (SetDetails)serializer.Deserialize(file, typeof(SetDetails));
-                        }
+                        //using (StreamReader file = File.OpenText(@"c:\import.json"))
+                        //{
+                        //    JsonSerializer serializer = new JsonSerializer();
+                        //    SetDetails jsonsets = (SetDetails)serializer.Deserialize(file, typeof(SetDetails));
+                        //    Console.WriteLine(jsonsets);
+                        //}
                     }
 
                 case "3":

@@ -5,7 +5,7 @@ using System.Text;
 
 namespace LegoSets
 {
-    class SetName : SetDetails
+    public class SetName : SetDetails
     {
         public string? ThemeSubTitle { get; set; }
     }

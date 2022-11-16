@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 namespace LegoSets
 {
-    class SetDetails
+   public class SetDetails
     {
         public int Id { get; set; }
         public string? Theme { get; set; }
