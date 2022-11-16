@@ -10,4 +10,3 @@ namespace LegoSets
         public string? ThemeSubTitle { get; set; }
     }
 }
-
