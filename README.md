@@ -14,6 +14,8 @@ Upon starting the prorgram you will be presented with 3 choices:
     
 2) Import set.
     -When importing the set the program imports from a JSON file.  The JSON file needs to be placed in the project file at this path /LegoSetTracker/LegoSetTracker/bin/Debug/net7.0/JSONIMPORT
+    A folder named JSONIMPORT is included in this repository that you can copy and past into the path.  In it, contains an example set import file. 
+    
     -Below is the structure required for JSON files. 
         {
         "SetId": 75327,
