@@ -13,7 +13,7 @@ namespace LegoSets
             Console.WriteLine("1) Would you like to manually enter a set?");
             Console.WriteLine("2) Import a set?");
             Console.WriteLine("3) Exit Application");
-            Console.Write("\r\nSelect an option: ");
+            Console.Write("Select an option: ");
             
             switch (Console.ReadLine())
             {
