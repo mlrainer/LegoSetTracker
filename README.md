@@ -5,7 +5,7 @@ This program will display manually entered or imported Lego Set Details to displ
 Program is using .NET 7 framework. 
 
 Features used:
-Implemented master loop console application that lets users pick between manually entering and set or importing a set.  The user also has the option to exit the program. 
+Implemented master loop console application that lets users pick between manually entering and set or importing a set.  Using a list.  Implemented ability to import a json file and display that data  The user also has the option to exit the program.  Using 3 methods. 
 
 Created additional class with inheritance.
 
