@@ -9,8 +9,6 @@ namespace LegoSets
          
         public static void importSet()
         {
-            // IF IMPORT
-            // CREATE JSONIMPORT FOLDER IF IT DOES NOT ALREADY EXIST.
             Console.WriteLine("Currently, Lego Set Tracker only allows import through a specific location.");
             Console.WriteLine("We hope to implement exploring your machine for the JSON file in the future.");
             Console.WriteLine("For now, look in the Lego Set Tracker project files for a JSONIMPORT folder and place the JSON in there.");
@@ -18,8 +16,6 @@ namespace LegoSets
             Console.WriteLine("Press enter when you have placed file in there.");
             Console.ReadLine();
 
-            // Search any json files.
-            //If there multiple, import one at a time
             var incomingSet = new List<SetDetails>();
 
             DirectoryInfo directory = new DirectoryInfo(Directory.GetCurrentDirectory());
