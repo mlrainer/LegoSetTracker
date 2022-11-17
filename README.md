@@ -1,10 +1,19 @@
 Lego Set Tracker
 
-This program display manually entered or imported Lego Set Details to display in the console application.
+This program will display manually entered or imported Lego Set Details to display in the console application.
+
+Program is using .NET 7 framework. 
+
+Features used:
+Implemented master loop console application that lets users pick between manually entering and set or importing a set.  The user also has the option to exit the program. 
+
+Created additional class with inheritance.
+
+Implemented ability to import a json file and display that data.
 
 Upon starting the prorgram you will be presented with 3 choices:  
 1) Manually enter set.
-    -When manually entering a set you will be presented with 6 different items to input information
+    -When manually entering a set you will be presented with 6 different items to input information.
         SetID:      The numerical id number of the set
         Title:      The title of the set eg. Darth Vader Helmet, Ecto 1, etc. 
         Theme:      The theme or Franchise of the set eg. Star Wars, Ghostbusters, etc. 
