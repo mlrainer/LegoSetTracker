@@ -7,6 +7,6 @@ namespace LegoSets
 {
     public class SetName : SetDetails
     {
-        public string? ThemeSubTitle { get; set; }
+        public string? Title { get; set; }
     }
 }

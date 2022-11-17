@@ -29,31 +29,31 @@ namespace LegoSets
             {
                 string json = reader.ReadToEnd();
                 incomingSet = JsonConvert.DeserializeObject<List<SetDetails>>(json);
+                Console.WriteLine(json);
             }
         }
 
         public static void manualSet()
         {
             Console.WriteLine("How many sets would you like to add?");
-#pragma warning disable CS8604 // Possible null reference argument.
             var numberOfRecords = int.Parse(Console.ReadLine());
-#pragma warning restore CS8604 // Possible null reference argument.
+
 
             var recordList = new List<SetName>();
             for (int i = 0; i < numberOfRecords; i++)
             {
 
                 SetName setname = new();
-                setname.Id = i + 1;
+                setname.SetId = i + 1;
+
+                Console.WriteLine("Enter Lego Set id Number:");
+                setname.SetId = int.Parse(Console.ReadLine());
 
                 Console.WriteLine("Enter sets Title:");
-                setname.ThemeSubTitle = Console.ReadLine();
+                setname.Title = Console.ReadLine();
 
                 Console.WriteLine("Enter sets Theme):");
                 setname.Theme = Console.ReadLine();
-
-                Console.WriteLine("Enter Lego Set id Number:");
-                setname.SetNumber = int.Parse(Console.ReadLine());
 
                 Console.WriteLine("Enter sets number of pieces:");
                 setname.Pieces = int.Parse(Console.ReadLine());
@@ -70,8 +70,8 @@ namespace LegoSets
             }
             foreach (SetName setname in recordList)
             {
-                Console.WriteLine($"Lego Set '{setname.Id}'");
-                Console.WriteLine($"Theme Sub Title: {setname.ThemeSubTitle}");
+                Console.WriteLine($"Lego Set '{setname.SetId}'");
+                Console.WriteLine($"Theme Sub Title: {setname.Title}");
                 Console.WriteLine($"Theme: {setname.Theme}");
                 Console.WriteLine($"Set ID Nuber: {setname.SetNumber}");
                 Console.WriteLine($"Number of Pieces: {setname.Pieces}");
