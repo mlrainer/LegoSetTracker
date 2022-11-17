@@ -1,0 +1,44 @@
+[
+    {
+        "SetId": 75327,
+        "Title": "Luke Skywalker Helmet",
+        "Theme": "Star Wars",
+        "Pieces": 675,
+        "MiniFigs": 0,
+        "Complete": "Yes"
+    },
+    {
+        "SetId": 75331,
+        "Title": "The Razor Crest",
+        "Theme": "Star Wars",
+        "Pieces": 6187,
+        "MiniFigs": 5,
+        "Complete": "No"
+    },
+    {
+        "SetId": 16020,
+        "Title": "Hogwarts Castle",
+        "Theme": "Harry Potter",
+        "Pieces": 16020,
+        "MiniFigs": 4,
+        "Complete": "No"
+    },
+    {
+        "SetId": 21336,
+        "Title": "The Office",
+        "Theme": "The Office",
+        "Pieces": 114,
+        "MiniFigs": 15,
+        "Complete": "Yes"
+    },
+    {
+        "SetId": 75290,
+        "Title": "Mos Eisley Cantina",
+        "Theme": "Star Wars",
+        "Pieces": 3187,
+        "MiniFigs": 21,
+        "Complete": "No"
+    }
+
+
+]
