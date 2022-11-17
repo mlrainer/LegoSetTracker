@@ -12,7 +12,7 @@ namespace LegoSets
             Console.WriteLine("Currently, Lego Set Tracker only allows import through a specific location.");
             Console.WriteLine("We hope to implement exploring your machine for the JSON file in the future.");
             Console.WriteLine("For now, look in the Lego Set Tracker project files for a JSONIMPORT folder and place the JSON in there.");
-            Console.WriteLine("Check README for JSON structure.");
+            Console.WriteLine("Check README for instruction and JSON structure.");
             Console.WriteLine("Press enter when you have placed file in there.");
             Console.ReadLine();
 
