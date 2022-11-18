@@ -5,11 +5,8 @@ This program will display manually entered or imported Lego Set Details to displ
 Program is using .NET 7 framework. 
 
 Features used:
-Implemented master loop console application that lets users pick between manually entering and set or importing a set.  Using a list.  Implemented ability to import a json file and display that data  The user also has the option to exit the program.  Using 3 methods. 
+Implemented master loop console application that lets users pick between manually entering and set or importing a set.  Using a list.  Created additional class with inheritance.  Implemented ability to import a json file and display that data  The user also has the option to exit the program.  Using 3 methods. 
 
-Created additional class with inheritance.
-
-Implemented ability to import a json file and display that data.
 
 Upon starting the prorgram you will be presented with 3 choices:  
 1) Manually enter set.
@@ -23,7 +20,7 @@ Upon starting the prorgram you will be presented with 3 choices:
     
 2) Import set.
     -When importing the set the program imports from a JSON file.  The JSON file needs to be placed in the project file at this path /LegoSetTracker/LegoSetTracker/bin/Debug/net7.0/JSONIMPORT
-    A folder named JSONIMPORT is included in this repository that you can copy and past into the path.  In it, contains an example set import file. 
+    A folder named JSONIMPORT is included in this repository that you can copy and past into the path.  In it, contains an example set import file.  Json file name needs to be named import.json 
     
     -Below is the structure required for JSON files. 
         {
